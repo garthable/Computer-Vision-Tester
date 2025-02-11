@@ -1,2 +1,4 @@
 numpy
-cv2
+opencv-python
+segment_anything
+supervision

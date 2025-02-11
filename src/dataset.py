@@ -4,7 +4,6 @@ import os.path as path
 import os
 
 from typing import Any
-from preprocess import preprocess
 
 Image = cv2.typing.MatLike
 
@@ -28,6 +27,9 @@ def get_leaf_files(dir_path) -> list[str]:
             for file_name in file_names:
                 files.append(path.join(root, file_name))
     return files
+
+def preprocess(data: Data) -> Data:
+    pass
 
 class Dataset:
     def __init__(self):
